@@ -24,6 +24,14 @@ public class AppController {
 		
 		return "index";
 	}
+
+	@RequestMapping("/show")
+	public String viewProductPage(Model model) {
+		List<Product> listProducts = service.showAll();
+		model.addAttribute("listProducts", listProducts);
+		
+		return "show";
+	}
 	
 	@RequestMapping("/new")
 	public String showNewProductPage(Model model) {
