@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<title>Identity Manager</title>
+</head>
+<body>
+<div align="center">
+    <h1>Identity List</h1>
+    <a href="new_identity">Create New identity</a>
+    <br/><br/>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>identity ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="identity : ${listIdentitys}">
+            	<td th:text="${identity.id}">Identity ID</td>
+                <td th:text="${identity.name}">Name</td>
+                <td>
+                	<a th:href="@{'/edit_identity/' + ${identity.id}}">Edit</a>
+                	&nbsp;&nbsp;&nbsp;
+                	<a th:href="@{'/delete_identity/' + ${identity.id}}">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>    
+</body>
+</html>

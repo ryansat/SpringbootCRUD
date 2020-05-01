@@ -1,5 +1,9 @@
-net\codejava\AppController.class
-net\codejava\ProductRepository.class
+net\codejava\repository\ProductRepository.class
+net\codejava\model\Product.class
+net\codejava\service\ProductService.class
+net\codejava\controller\ProductController.class
+net\codejava\repository\IdentityRepository.class
+net\codejava\controller\IdentityController.class
+net\codejava\service\IdentityService.class
+net\codejava\model\Identity.class
 net\codejava\AppMain.class
-net\codejava\ProductService.class
-net\codejava\Product.class
