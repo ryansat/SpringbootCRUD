@@ -1,9 +1,14 @@
 net\codejava\repository\ProductRepository.class
 net\codejava\model\Product.class
 net\codejava\service\ProductService.class
+net\codejava\service\UserService.class
 net\codejava\controller\ProductController.class
 net\codejava\repository\IdentityRepository.class
 net\codejava\controller\IdentityController.class
+net\codejava\controller\UserController.class
 net\codejava\service\IdentityService.class
+net\codejava\model\User.class
 net\codejava\model\Identity.class
+net\codejava\config\WebSecurityConfig.class
+net\codejava\repository\UserRepository.class
 net\codejava\AppMain.class

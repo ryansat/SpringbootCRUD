@@ -4,31 +4,59 @@
 <head>
 <meta charset="utf-8"/>
 <title>Identity Manager</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div align="center">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#" th:href="@{/}">Example Project</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li sec:authorize="isAuthenticated()"><a th:href="@{/product}">Product</a></li>
+					<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<br>
+	<br>
     <h1>Identity List</h1>
     <a href="new_identity">Create New identity</a>
-    <br/><br/>
-    <table border="1" cellpadding="10">
-        <thead>
-            <tr>
-                <th>identity ID</th>
-                <th>Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr th:each="identity : ${listIdentitys}">
-            	<td th:text="${identity.id}">Identity ID</td>
-                <td th:text="${identity.name}">Name</td>
-                <td>
-                	<a th:href="@{'/edit_identity/' + ${identity.id}}">Edit</a>
-                	&nbsp;&nbsp;&nbsp;
-                	<a th:href="@{'/delete_identity/' + ${identity.id}}">Delete</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+	<br/><br/>
+	<div class="container">
+		<table cellpadding="10" class="table">
+			<thead>
+				<tr>
+					<th>identity ID</th>
+					<th>Name</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="identity : ${listIdentitys}" >
+					<td th:text="${identity.id}">Identity ID</td>
+					<td th:text="${identity.name}">Name</td>
+					<td>
+						<a th:href="@{'/edit_identity/' + ${identity.id}}">Edit</a>
+						&nbsp;&nbsp;&nbsp;
+						<a th:href="@{'/delete_identity/' + ${identity.id}}">Delete</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </div>    
 </body>
 </html>

@@ -1,9 +1,14 @@
+c:\Users\fajar\Documents\GitHub\SpringbootCRUD\src\main\java\net\codejava\model\User.java
 c:\Users\fajar\Documents\GitHub\SpringbootCRUD\src\main\java\net\codejava\controller\IdentityController.java
 c:\Users\fajar\Documents\GitHub\SpringbootCRUD\src\main\java\net\codejava\repository\IdentityRepository.java
-c:\Users\fajar\Documents\GitHub\SpringbootCRUD\src\main\java\net\codejava\service\IdentityService.java
 c:\Users\fajar\Documents\GitHub\SpringbootCRUD\src\main\java\net\codejava\service\ProductService.java
+c:\Users\fajar\Documents\GitHub\SpringbootCRUD\src\main\java\net\codejava\controller\UserController.java
+c:\Users\fajar\Documents\GitHub\SpringbootCRUD\src\main\java\net\codejava\controller\ProductController.java
+c:\Users\fajar\Documents\GitHub\SpringbootCRUD\src\main\java\net\codejava\service\UserService.java
+c:\Users\fajar\Documents\GitHub\SpringbootCRUD\src\main\java\net\codejava\service\IdentityService.java
+c:\Users\fajar\Documents\GitHub\SpringbootCRUD\src\main\java\net\codejava\config\WebSecurityConfig.java
 c:\Users\fajar\Documents\GitHub\SpringbootCRUD\src\main\java\net\codejava\model\Product.java
 c:\Users\fajar\Documents\GitHub\SpringbootCRUD\src\main\java\net\codejava\repository\ProductRepository.java
-c:\Users\fajar\Documents\GitHub\SpringbootCRUD\src\main\java\net\codejava\controller\ProductController.java
+c:\Users\fajar\Documents\GitHub\SpringbootCRUD\src\main\java\net\codejava\repository\UserRepository.java
 c:\Users\fajar\Documents\GitHub\SpringbootCRUD\src\main\java\net\codejava\model\Identity.java
 c:\Users\fajar\Documents\GitHub\SpringbootCRUD\src\main\java\net\codejava\AppMain.java
